@@ -10,6 +10,9 @@ body {
 .leftpull {
   float: left; }
 
+.rightpull {
+  float: right; }
+
 .mail {
   margin-left: 20%;
   width: 80%;
@@ -19,12 +22,27 @@ body {
   margin-bottom: 100px; }
 
 .mail-header-content {
-  width: 70%;
-  margin: auto; }
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid; }
   .mail-header-content .first-layer {
     margin-top: 15px; }
+    .mail-header-content .first-layer:after {
+      content: "";
+      display: block;
+      clear: both; }
   .mail-header-content h1 {
     float: left;
     margin: 0; }
   .mail-header-content input {
     float: right; }
+  .mail-header-content .second-layer {
+    margin-top: 15px; }
+    .mail-header-content .second-layer:after {
+      content: "";
+      display: block;
+      clear: both; }
+    .mail-header-content .second-layer ul:first {
+      list-style: none; }
+      .mail-header-content .second-layer ul:first li {
+        float: left; }
