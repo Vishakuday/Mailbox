@@ -4,6 +4,7 @@
       <meta charset="utf-8">
       <title>Start Grunt</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link href="css/style.min.css" rel="stylesheet">
    </head>
    <body>
@@ -16,17 +17,22 @@
                <div class="mail-header-content">
                   <div class="first-layer">
                      <h1>Inbox</h1>
-                     <input />
+             <div class="form-group has-feedback">
+                <input type="text" class="form-control" id="inputValidation"/>
+                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            </div>
+					 
                   </div>
 				  <div class="second-layer">
                   <ul class="leftpull">
-                     <li>1</li>
-                     <li>2</li>
-                     <li>3</li>
+                     <li><a href="#"><div class="circle"><span class="glyphicon glyphicon-repeat"></span></div></a></li>
+                     <li><a href="#"><div class="circle"><span class="glyphicon glyphicon-heart"></span></div></a></li>
+                     <li><a href="#"><div class="circle"><span class="glyphicon glyphicon-home"></span></div></a></li>
+                     <li><a href="#"><div class="circle"><span class="glyphicon glyphicon-menu-down"></span></div></a></li>
                   </ul>
 				  <ul class="rightpull">
-				  <li>link1</li>
-				  <li>link2</li>
+				  <li>Alphabetically</li>
+				  <li>Recent</li>
 				  </ul>
 				  </div>
                </div>

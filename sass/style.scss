@@ -20,11 +20,17 @@ body {
 }
 .mail-header {
     margin-bottom: 100px;
+    margin-top: 30px;
+}
+.circle {
+    border-radius: 70%;
+    padding: 4px 7px;
+    border: 1px solid #bbbaba;
 }
 .mail-header-content {
     width: 80%;
     margin: auto;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #bbbaba;
     .first-layer {
         &:after {
             content: "";
@@ -35,22 +41,36 @@ body {
     }
     h1 {
         float: left;
-        margin: 0;
+        margin: 0 0 0 54px;
     }
     input {
         float: right;
+        width: 30%;
+    }
+    .glyphicon {
+        color: #bbbaba;
     }
     .second-layer {
+        color: #bbbaba;
+        margin-top: 50px;
         &:after {
             content: "";
             display: block;
             clear: both;
         }
-        margin-top:15px;
-        ul:first {
+        ul:first-child {
             list-style: none;
             li {
                 float: left;
+                padding-left: 10px;
+            }
+        }
+        ul:nth-child(2) {
+            list-style: none;
+            float: right;
+            li {
+                float: left;
+                padding-right: 10px;
             }
         }
     }
