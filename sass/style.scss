@@ -204,6 +204,7 @@ input[type=radio]:checked ~ label {
         img {
             border-radius: 50%;
             width: 4%;
+            margin-left: 8%;
         }
         div {
             display: inline-block;
@@ -238,4 +239,90 @@ input[type=radio]:checked ~ label {
 .mail-content::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     outline: 1px solid #b0b7be;
+}
+@media (max-width: 500px) {
+    .sidekick {
+        display: none;
+    }
+    .mail {
+        margin-left: 10;
+        width: 100%;
+    }
+    .mail-content {
+        .single-mail {
+            padding-bottom: 5%;
+            border-bottom: 1px solid;
+            padding-top: 5%;
+            img {
+                border-radius: 50%;
+                width: 20%;
+                float: left;
+            }
+            div {
+                display: inline-block;
+                margin-left: 10%;
+            }
+            .person-name {
+                margin-left: 38%;
+                display: block;
+            }
+            .random-pic {
+                margin-left: 0;
+            }
+            .mail-subject {
+                margin-left: 10%;
+            }
+            &:after {
+                content: "";
+                display: none;
+            }
+        }
+    }
+    .mail-header-content {
+        width: 80%;
+        margin: auto;
+        border-bottom: 1px solid #bbbaba;
+        h1 {
+            float: none;
+            margin: auto;
+        }
+        input {
+            width: 100%;
+        }
+        .second-layer {
+            margin-top: 10px;
+            &:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            ul:first-child {
+                padding-left: 0;
+                margin-left: 20%;
+            }
+            ul:nth-child(2) {
+                list-style: none;
+                float: left;
+                padding-left: 10px;
+                margin-left: 20%;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+    .sidekick {
+        display: none;
+    }
+    .mail {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .mail-header-content {
+        input {
+            width: 50%;
+            float: left;
+            margin-left: 10%;
+        }
+        .glyphicom-search {}
+    }
 }
